@@ -23,4 +23,6 @@ with jackhammer as source:
     r.adjust_for_ambient_noise(source, duration=0.5) #Noice cancalation part
     audio = r.record(source)
 z = r.recognize_google(audio)
+# z = r.recognize_google(audio,show_all=True) // will show the trancscript from google  
+
 print (z)
