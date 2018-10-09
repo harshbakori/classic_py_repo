@@ -16,3 +16,11 @@ with harvard as source:
 
 z = r.recognize_google(audio) # translate
 print (z) # pritn the translated output on the screen
+print("/n end of the line")
+# Noise File in audio
+jackhammer = sr.AudioFile('jackhammer.wav')
+with jackhammer as source:
+    r.adjust_for_ambient_noise(source, duration=0.5) #Noice cancalation part
+    audio = r.record(source)
+z = r.recognize_google(audio)
+print (z)
