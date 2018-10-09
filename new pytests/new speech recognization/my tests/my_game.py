@@ -10,7 +10,7 @@ def rec():
         r.adjust_for_ambient_noise(source,duration=0.5) # input noice reduction
         audio = r.listen(source) 
     z = r.recognize_sphinx(audio)
-    print (z + "you have tryed " + str(count) + "times")
+    print (z + "\n you have tryed " + str(count) + "times")
 count = 0
 while True:
     count+1
