@@ -13,10 +13,11 @@ z = r.recognize_google(audio)
 print (z)
 
 #// below code is to test the recognization objects argument ////////////////////////////////
-
+#first you have to have gueesy_game code in the same directory
 #import speech_recognition as sr
 #from guessing_game import recognize_speech_from_mic
 #r = sr.Recognizer()
 #m = sr.Microphone()
 #recognize_speech_from_mic(r, m)
 #///////////////////////////////////////////////////////////////////////////////////////////
+
