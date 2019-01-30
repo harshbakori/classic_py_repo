@@ -1,4 +1,5 @@
 # input from microphone
+import time
 import speech_recognition as sr
 r = sr.Recognizer()
 mic = sr.Microphone() #set default microphone as audio input
@@ -8,9 +9,12 @@ mic = sr.Microphone() #set default microphone as audio input
 print("say somithing")
 with mic as source:
     r.adjust_for_ambient_noise(source,duration=0.5) # input noice reduction
-    audio = r.listen(source) 
+    audio = r.listen(source)
+    print("recognizing...")
 z = r.recognize_google(audio)
 print (z)
+
+sleep(20)
 
 #// below code is to test the recognization objects argument ////////////////////////////////
 #first you have to have gueesy_game code in the same directory
