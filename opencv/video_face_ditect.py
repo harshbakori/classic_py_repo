@@ -1,7 +1,7 @@
 #capturing video
 import cv2,time
-#face_cascade = cv2.CascadeClassifier("H:\\Github\\semester 5 projects\\py\\opencv\\opencv-master\\data\\haarcascades\\haarcascade_frontalface_alt.xml")#xmlfile having face specifications
-face_cascade = cv2.CascadeClassifier("/media/harsh/Dead Zone {-_-}/Github/semester 5 projects/py/opencv/opencv-master/data/haarcascades/haarcascade_frontalface_alt.xml")#xmlfile having face specifications
+face_cascade = cv2.CascadeClassifier("D:\\Github\\semester 5 projects\\py\\opencv\\opencv-master\\data\\haarcascades\\haarcascade_frontalface_alt2.xml")#xmlfile having face specifications
+#face_cascade = cv2.CascadeClassifier("/media/harsh/Dead Zone {-_-}/Github/semester 5 projects/py/opencv/opencv-master/data/haarcascades/haarcascade_frontalface_alt.xml")#xmlfile having face specifications
 
 video = cv2.VideoCapture(0)
 

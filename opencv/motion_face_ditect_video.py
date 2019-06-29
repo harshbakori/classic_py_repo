@@ -2,8 +2,8 @@
 import cv2,time
 
 
-#face_cascade = cv2.CascadeClassifier("D:\\Github\\semester 5 projects\\py\\opencv\\opencv-master\\data\\haarcascades\\haarcascade_frontalface_alt2.xml")#xmlfile having face specifications
-face_cascade = cv2.CascadeClassifier("/media/d3ad53c/Dead Zone {-_-}/Github/semester 5 projects/py/opencv/opencv-master/data/haarcascades/haarcascade_frontalface_alt2.xml")#xmlfile having face specifications
+face_cascade = cv2.CascadeClassifier("D:\\Github\\semester 5 projects\\py\\opencv\\opencv-master\\data\\haarcascades\\haarcascade_frontalface_alt2.xml")#xmlfile having face specifications
+#face_cascade = cv2.CascadeClassifier("/media/d3ad53c/Dead Zone {-_-}/Github/semester 5 projects/py/opencv/opencv-master/data/haarcascades/haarcascade_frontalface_alt2.xml")#xmlfile having face specifications
 
 
 first_frame = None
