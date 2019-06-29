@@ -4,11 +4,11 @@ import math ,sklearn
 import numpy as np
 from sklearn import preprocessing, svm 
 from sklearn.model_selection import cross_validate
-from sklearn.linear_model import Linear_Regression
+from sklearn.linear_model import Ridge
 
 #df = quandl.get('CHRIS/MGEX_MW6');
-df = quandl.get('WIKI/GOOGL');
-#print(df.head());  #  print data header for clerification that upper line is running
+df = quandl.get('WIKI/GOOGL')
+print(df.head());  #  print data header for clerification that upper line is running
 
 df = df[['Adj. Open','Adj. High','Adj. Low','Adj. Close','Adj. Volume']]
 
@@ -17,7 +17,7 @@ df['PCT_change']=(df['Adj. Low']-df['Adj. High'])/df['Adj. High']*100.0;
 
 df = df[['Adj. Close','HL_PCT','PCT_change','Adj. Volume',]];
 
-#print(df.head());
+#print(df.head()); 
 
 forcast_col = 'Adj. Close'
 df.fillna(-99999,inplace=True)
