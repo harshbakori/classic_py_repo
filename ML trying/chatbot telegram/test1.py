@@ -8,7 +8,7 @@ def convert_uppercase(bot, update):
 
 def main():
   # Create Updater object and attach dispatcher to it
-  updater = Updater(TOKEN)
+  updater = Updater('895598561:AAFWAuvk7ex4RqIkTY0kgoy1cHWRZpdK7bM')
   dispatcher = updater.dispatcher
   print("Bot started")
 
